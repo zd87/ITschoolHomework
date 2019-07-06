@@ -1,0 +1,208 @@
+/* FRAME */
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: dimgrey;
+    font-size: 16px;
+    margin: 0 auto;
+ }
+ 
+
+.a4-page {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid dimgrey;
+}
+
+/*HEADER*/
+
+header {
+    padding: 5% ;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    width: 65%;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 3px solid lightseagreen;
+    padding: 2px;
+}
+
+/*CONTACT INFORMATION*/
+
+.contact-information {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    display: flex;   
+    justify-content: space-evenly; 
+    clear: right;
+}
+
+i {
+    margin: 20px;
+}
+
+/* MAIN SECTION */ 
+
+.flex-container {
+    display:inline-flex;
+    flex-flow: wrap;
+    margin: 2% 5% 0% 5%;
+}
+
+.column-one {
+    flex-basis: 25%;
+    text-align: right;
+    margin: 0% 5% 2% 0%;
+}
+
+.column-two {
+    flex-basis: 70%;
+    margin: 0% 0% 2% 0%;
+}
+
+.column-two.under-line {
+    border-bottom: 1px solid dimgrey;
+}
+
+/* TEXT EDITING */
+
+h1, h3, p.uppercase {
+    text-transform: uppercase;
+    color: lightseagreen;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid dimgrey;
+    letter-spacing: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2% 0 0 0;
+}
+
+h3 {
+    letter-spacing: 0.5em;
+    margin-top: 1em;
+}
+
+h4 {
+    text-align: justify;
+}
+
+p {
+    margin: 0;
+}
+
+/*SKILLS SECTION*/
+
+ .progress-bar-container {
+    width: 55%;
+    height: 10px;
+    border: 1px solid dimgrey;
+    border-radius: 5px;
+    padding: 0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: lightseagreen;
+  }
+
+.skills-flex-container {
+    display: flex;
+    margin: 0 0 2% 18%;
+}
+
+.skills-column {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    padding: 0 7% 0 0%;
+}
+
+.skills-column p {
+    width: 20%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+/*FOOTER*/
+
+.footer {
+    height: 2em;
+    width: 100%;
+    background-color: lightseagreen;
+    align-items: end;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 800px) {
+    body {
+      font-size: 12px;
+    }
+
+    .a4-page {
+        width: auto;
+        border: 1px solid dimgrey;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 12px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header div {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 2%;
+    }
+
+    .a4-page {
+        width: auto;
+        border: 1px solid dimgrey;
+    }
+
+    .column-one, .column-two, .skills-column {
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .contact-information {
+        flex-wrap: wrap;
+    }
+
+    .skills-flex-container {
+        flex-wrap: wrap;
+        margin: 0 0 2% 0;
+        flex-basis: 100%;
+    }
+
+    .skills-column p {
+        text-align: left;
+    }
+}
