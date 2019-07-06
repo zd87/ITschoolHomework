@@ -1,0 +1,5 @@
+Requirements: a list of words, a number of players.
+While number of players is greater than 1 - a new word is input.
+If the word is not in the list - it is added to the list, 
+if the word is in the list - the number of players is reduced by 1.
+The game ends when there is 1 player left. They are a winner. 
